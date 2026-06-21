@@ -1,0 +1,9 @@
+[Unit]
+Description=LOTW Auto-Sync Service
+After=network.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/lotw_sync
+ExecStart=/usr/bin/python3 /opt/lotw_sync/lotw_sync.py

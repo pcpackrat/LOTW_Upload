@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for LOTW Auto-Sync Service
+
+[Timer]
+# Run 5 minutes after boot, then every 1 hour
+OnBootSec=5min
+OnUnitActiveSec=1h
+Unit=lotw_sync.service
+
+[Install]
+WantedBy=timers.target
