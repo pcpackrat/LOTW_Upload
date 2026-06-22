@@ -8,7 +8,7 @@ Debian 13 (Trixie) enforces PEP-668 and blocks system-wide `pip` installations. 
 
 ```bash
 sudo apt update
-sudo apt install python3-pymysql trustedqsl
+sudo apt install python3-pymysql trustedqsl xvfb
 ```
 
 ## Configuring TQSL (Headless Server)
