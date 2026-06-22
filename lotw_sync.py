@@ -158,7 +158,7 @@ def run_sync():
         
         logging.info("Uploading via TQSL...")
         result = subprocess.run(
-            [TQSL_PATH, "-q", "-d", "-l", TQSL_STATION_LOCATION, "-u", "-a", "compliant", "-x", adif_filename],
+            ["xvfb-run", "-a", TQSL_PATH, "-q", "-d", "-l", TQSL_STATION_LOCATION, "-u", "-a", "compliant", "-x", adif_filename],
             capture_output=True,
             text=True
         )
